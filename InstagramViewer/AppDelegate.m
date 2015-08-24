@@ -7,16 +7,29 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h" HSMyMediaViewController * controller = [[HSMyMediaViewController alloc] init];
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+@synthesize window = _window;
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+//    ViewController * controller = [[ViewController alloc] init];
+//    UINavigationController * navigation = [[UINavigationController alloc] initWithRootViewController:controller];
+//    self.window.rootViewController = navigation;
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+   
+
+    
     return YES;
 }
 

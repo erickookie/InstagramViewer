@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D297CF1B8AD6A100AD2B98 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D297CE1B8AD6A100AD2B98 /* Cell.m */; };
 		04DF91B31B836E08009F4891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91B21B836E08009F4891 /* main.m */; };
 		04DF91B61B836E08009F4891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91B51B836E08009F4891 /* AppDelegate.m */; };
 		04DF91B91B836E08009F4891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91B81B836E08009F4891 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		04DF91BE1B836E08009F4891 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DF91BD1B836E08009F4891 /* Images.xcassets */; };
 		04DF91C11B836E08009F4891 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DF91BF1B836E08009F4891 /* LaunchScreen.xib */; };
 		04DF91CD1B836E08009F4891 /* InstagramViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91CC1B836E08009F4891 /* InstagramViewerTests.m */; };
+		04DF91DA1B836F93009F4891 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91D91B836F93009F4891 /* Connection.m */; };
+		04DF91E21B8377F6009F4891 /* JSONParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91E11B8377F6009F4891 /* JSONParsing.m */; };
+		04EAEE991B86326800B38C6F /* ModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EAEE981B86326800B38C6F /* ModelClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04D297CD1B8AD68E00AD2B98 /* Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		04D297CE1B8AD6A100AD2B98 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		04DF91AD1B836E08009F4891 /* InstagramViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DF91B11B836E08009F4891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DF91B21B836E08009F4891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,12 @@
 		04DF91C61B836E08009F4891 /* InstagramViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DF91CB1B836E08009F4891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DF91CC1B836E08009F4891 /* InstagramViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramViewerTests.m; sourceTree = "<group>"; };
+		04DF91D81B836F62009F4891 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		04DF91D91B836F93009F4891 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		04DF91DC1B837769009F4891 /* JSONParsing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParsing.h; sourceTree = "<group>"; };
+		04DF91E11B8377F6009F4891 /* JSONParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParsing.m; sourceTree = "<group>"; };
+		04EAEE981B86326800B38C6F /* ModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelClass.m; sourceTree = "<group>"; };
+		04EAEE9A1B86328B00B38C6F /* ModalClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalClass.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04D297CC1B8AD67500AD2B98 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04D297CD1B8AD68E00AD2B98 /* Cell.h */,
+				04D297CE1B8AD6A100AD2B98 /* Cell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		04DF91A41B836E08009F4891 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +102,10 @@
 		04DF91AF1B836E08009F4891 /* InstagramViewer */ = {
 			isa = PBXGroup;
 			children = (
+				04D297CC1B8AD67500AD2B98 /* Cell */,
+				04DF91D61B836E11009F4891 /* Connection */,
+				04DF91DB1B837740009F4891 /* Parsing */,
+				04EAEE971B86324B00B38C6F /* ModalClass */,
 				04DF91B41B836E08009F4891 /* AppDelegate.h */,
 				04DF91B51B836E08009F4891 /* AppDelegate.m */,
 				04DF91B71B836E08009F4891 /* ViewController.h */,
@@ -117,6 +142,33 @@
 				04DF91CB1B836E08009F4891 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DF91D61B836E11009F4891 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				04DF91D81B836F62009F4891 /* Connection.h */,
+				04DF91D91B836F93009F4891 /* Connection.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		04DF91DB1B837740009F4891 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				04DF91DC1B837769009F4891 /* JSONParsing.h */,
+				04DF91E11B8377F6009F4891 /* JSONParsing.m */,
+			);
+			name = Parsing;
+			sourceTree = "<group>";
+		};
+		04EAEE971B86324B00B38C6F /* ModalClass */ = {
+			isa = PBXGroup;
+			children = (
+				04EAEE9A1B86328B00B38C6F /* ModalClass.h */,
+				04EAEE981B86326800B38C6F /* ModelClass.m */,
+			);
+			name = ModalClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EAEE991B86326800B38C6F /* ModelClass.m in Sources */,
 				04DF91B91B836E08009F4891 /* ViewController.m in Sources */,
+				04DF91E21B8377F6009F4891 /* JSONParsing.m in Sources */,
 				04DF91B61B836E08009F4891 /* AppDelegate.m in Sources */,
 				04DF91B31B836E08009F4891 /* main.m in Sources */,
+				04DF91DA1B836F93009F4891 /* Connection.m in Sources */,
+				04D297CF1B8AD6A100AD2B98 /* Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +472,7 @@
 				04DF91D21B836E08009F4891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DF91D31B836E08009F4891 /* Build configuration list for PBXNativeTarget "InstagramViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +481,7 @@
 				04DF91D51B836E08009F4891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
