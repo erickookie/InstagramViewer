@@ -61,7 +61,6 @@
 }
 
 #pragma mark - JSONParsingDelegate
-
 -(void) JSONParsing: (JSONParsing *)jsonParsing didFinishParsingWithResult: (NSDictionary *) resultDict
 {
     NSLog(@"JSON Parsing -> ");
@@ -94,7 +93,7 @@
              //NSLog(@"Array from urlstandardResArray -> %@", self.urlstandardResArray);
          }
     [self.tableView reloadData];
-    [self.collectionView reloadInputViews];
+    [self.collectionView reloadData];
     //NSLog(@"*******Array Size -> %lu", (unsigned long)[self.urlstandardResArray count]);
     NSLog(@"End of JSON Parsing");
 }
@@ -150,33 +149,29 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Configure the cell and it's content");
-    
-//    NSLog(@"Assign the cell name with ID");
+    //NSLog(@"Configure the cell and it's content");
+
     static NSString * simpleTableIdentifier = @"ImageCell";
     
-//    NSLog(@"Create the ModelClass Object for the Array URL");
     ModelClass * imageUrl = (ModelClass *)[self.urlstandardResArray objectAtIndex:indexPath.row];
-    
-//    NSLog(@"Reusable Cell");
+
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:simpleTableIdentifier forIndexPath:indexPath];
     
-//    NSLog(@"If of if the Cell is null");
     if (cell == nil)
     {
-        //cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
         cell = [UICollectionViewCell alloc];
     }
     
-//    NSLog(@"Assign the URL for the String");
-    NSString * urlArtWork = imageUrl.urlPath;
-//    NSLog(@"Assign that string to the NSURL");
-    NSURL * url = [NSURL URLWithString:urlArtWork];
-//    NSLog(@"NSDATA form the NSURL");
-    NSData * imageData = [NSData dataWithContentsOfURL:url];
-//    NSLog(@"Set the image to the UIImageView");
-    self.urlImageView.image=[[UIImage alloc]initWithData:imageData];
-//    NSLog(@"Return Cell");
+    
+    NSString * urlArtWork = imageUrl.urlPath;                       // Create the string to set the url
+    NSURL * url = [NSURL URLWithString:urlArtWork];                 // Set the URL with the string from the Object
+    NSData * imageData = [NSData dataWithContentsOfURL:url];        // Create a Data witht the URL infor
+    UIImageView *imageView = (UIImageView*)[cell viewWithTag:100];  // Create a ImageView realted to the ImageView tag:10
+    UIImage *img = [[UIImage alloc]initWithData:imageData];         // Create a Image with the Data
+    [imageView setImage:img];                                       // Set the Image to the ImageView
+
+    cell.backgroundColor = [UIColor whiteColor];                      //Change Background color
+    
     return cell;
 }
 

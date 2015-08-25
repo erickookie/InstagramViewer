@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Evo-uY-cSH">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="73"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label for the instagram hashtag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAa-LJ-7fn">
                                         <rect key="frame" x="8" y="8" width="243" height="21"/>
@@ -40,34 +40,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTw-S3-1ZI">
-                                <rect key="frame" x="0.0" y="81" width="600" height="90"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-qf-qwl">
+                                <rect key="frame" x="0.0" y="73" width="600" height="519"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hDR-IK-G5a">
-                                        <rect key="frame" x="8" y="8" width="584" height="491"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <prototypes>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userPost" id="1mC-lW-9TD">
-                                                <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1mC-lW-9TD" id="i5i-NW-nvB">
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="hYo-yj-CKr"/>
-                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="da6-Zc-M4m"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-qf-qwl">
-                                <rect key="frame" x="0.0" y="179" width="600" height="628"/>
-                                <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WmI-de-9zL">
-                                        <rect key="frame" x="8" y="8" width="584" height="620"/>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WmI-de-9zL">
+                                        <rect key="frame" x="8" y="8" width="584" height="503"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EDD-fi-B2f">
                                             <size key="itemSize" width="100" height="100"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -97,18 +74,27 @@
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WmI-de-9zL" secondAttribute="trailing" id="2xk-cm-yd5"/>
+                                    <constraint firstAttribute="bottom" secondItem="WmI-de-9zL" secondAttribute="bottom" id="edA-YP-mMG"/>
+                                    <constraint firstItem="WmI-de-9zL" firstAttribute="top" secondItem="qoj-qf-qwl" secondAttribute="top" id="hlh-B1-Ouo"/>
+                                    <constraint firstItem="WmI-de-9zL" firstAttribute="leading" secondItem="qoj-qf-qwl" secondAttribute="leading" id="uY3-2s-0qd"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qoj-qf-qwl" secondAttribute="bottom" id="2M6-CX-C5K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qoj-qf-qwl" secondAttribute="trailing" id="3Tg-8n-P06"/>
+                            <constraint firstItem="qoj-qf-qwl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="OER-Qw-Fdh"/>
                             <constraint firstItem="Evo-uY-cSH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="QLQ-Wy-nml"/>
+                            <constraint firstItem="qoj-qf-qwl" firstAttribute="top" secondItem="Evo-uY-cSH" secondAttribute="bottom" constant="-10" id="atK-IY-Dv4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Evo-uY-cSH" secondAttribute="trailing" id="cEb-Fe-WRa"/>
                             <constraint firstItem="Evo-uY-cSH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="xfE-z8-XcE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="WmI-de-9zL" id="x7P-5Y-Vpk"/>
-                        <outlet property="tableView" destination="hDR-IK-G5a" id="Dbn-1i-aZb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
