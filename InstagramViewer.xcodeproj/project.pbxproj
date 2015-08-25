@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D261761B8C3208007C0154 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D261751B8C3208007C0154 /* ImageView.m */; };
 		04D297CF1B8AD6A100AD2B98 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D297CE1B8AD6A100AD2B98 /* Cell.m */; };
 		04DF91B31B836E08009F4891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91B21B836E08009F4891 /* main.m */; };
 		04DF91B61B836E08009F4891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91B51B836E08009F4891 /* AppDelegate.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04D261741B8C3208007C0154 /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		04D261751B8C3208007C0154 /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
 		04D297CD1B8AD68E00AD2B98 /* Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
 		04D297CE1B8AD6A100AD2B98 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		04DF91AD1B836E08009F4891 /* InstagramViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +113,8 @@
 				04DF91B51B836E08009F4891 /* AppDelegate.m */,
 				04DF91B71B836E08009F4891 /* ViewController.h */,
 				04DF91B81B836E08009F4891 /* ViewController.m */,
+				04D261741B8C3208007C0154 /* ImageView.h */,
+				04D261751B8C3208007C0154 /* ImageView.m */,
 				04DF91BA1B836E08009F4891 /* Main.storyboard */,
 				04DF91BD1B836E08009F4891 /* Images.xcassets */,
 				04DF91BF1B836E08009F4891 /* LaunchScreen.xib */,
@@ -275,6 +280,7 @@
 				04DF91B91B836E08009F4891 /* ViewController.m in Sources */,
 				04DF91E21B8377F6009F4891 /* JSONParsing.m in Sources */,
 				04DF91B61B836E08009F4891 /* AppDelegate.m in Sources */,
+				04D261761B8C3208007C0154 /* ImageView.m in Sources */,
 				04DF91B31B836E08009F4891 /* main.m in Sources */,
 				04DF91DA1B836F93009F4891 /* Connection.m in Sources */,
 				04D297CF1B8AD6A100AD2B98 /* Cell.m in Sources */,

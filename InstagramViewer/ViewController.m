@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "ModalClass.h"
-#import "Cell.h"
+#import "Connection.h"
+#import "ImageView.h"
+#import "JSONParsing.h"
 
 @interface ViewController ()
 
@@ -166,6 +168,7 @@
     NSString * urlArtWork = imageUrl.urlPath;                       // Create the string to set the url
     NSURL * url = [NSURL URLWithString:urlArtWork];                 // Set the URL with the string from the Object
     NSData * imageData = [NSData dataWithContentsOfURL:url];        // Create a Data witht the URL infor
+    
     UIImageView *imageView = (UIImageView*)[cell viewWithTag:100];  // Create a ImageView realted to the ImageView tag:10
     UIImage *img = [[UIImage alloc]initWithData:imageData];         // Create a Image with the Data
     [imageView setImage:img];                                       // Set the Image to the ImageView
@@ -173,6 +176,23 @@
     cell.backgroundColor = [UIColor whiteColor];                      //Change Background color
     
     return cell;
+}
+
+#pragma mark - Prepare for segue method
+//This method prepares the data for the next view controller
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"This is the method for the Image View of the Selected Image in the Collection View");
+    
+    if ([segue.identifier isEqualToString:@"ImageView"])
+    {
+        NSArray *arrayOfIndexPaths = [self.collectionView indexPathsForSelectedItems];
+        NSIndexPath * indexPath = [arrayOfIndexPaths firstObject];
+        ModelClass * element = [self.urlstandardResArray objectAtIndex:indexPath.row];
+        ImageView * ImageView = segue.destinationViewController;
+        ImageView.ImageURL=element;
+        NSLog(@"Current Image -> %@",element.urlPath );
+    }
 }
 
 @end
