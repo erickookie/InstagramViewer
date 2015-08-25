@@ -145,7 +145,7 @@
     //#warning Incomplete method implementation -- Return the number of items in the section
     NSLog(@"Collection view return array count");
     NSLog(@"Array Size -> %lu", (unsigned long)[self.urlstandardResArray count]);
-    return self.urlstandardResArray.count;
+    return [self.urlstandardResArray count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
